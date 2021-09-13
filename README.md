@@ -1,4 +1,5 @@
 # Protopaint V2
+![Build](https://github.com/maxdevos49/protopaintv2/actions/workflows/protopaint.yml/badge.svg?branch=develop)
 
 Paint application in the browser using a CLUI interface. Export is by default a SVG. Still a major work in progress.
 
