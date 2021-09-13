@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: "14"
       - name: npm install, build, and test
-      - run: |
+        run: |
           npm install
           npm run dist
       - name: Archive production artifacts
