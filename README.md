@@ -1,6 +1,6 @@
 # Protopaint V2
 
-Paint application in the browser using a CLUI interface. Export is by default a SVG.
+Paint application in the browser using a CLUI interface. Export is by default a SVG. Still a major work in progress.
 
 ### Local Development Setup
 
