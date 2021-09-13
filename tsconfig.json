@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "rootDir": ".",
+        "target": "es5",
+        "module": "es6",
+        "lib": [
+            "es2021",
+            "dom",
+        ],
+        "inlineSources": true,
+        "incremental": true,
+        "declaration": false,
+        "sourceMap": true,
+        "allowJs": false,
+        "removeComments": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "downlevelIteration": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+    },
+    "include": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+    ]
+}

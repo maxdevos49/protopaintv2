@@ -1,0 +1,23 @@
+# Build/Distribution
+dist
+build
+
+# NPM/NodeJS
+node_modules
+
+# Typescript
+*.js
+*.js.map
+*.js.min
+
+# macOS
+.DS_Store
+
+# Security
+.env
+*.crt
+*.key
+
+# vscode
+*.code-workspace
+.vscode

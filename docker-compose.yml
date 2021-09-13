@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  nginx:
+    build: ./.docker/nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./.docker/nginx/conf.d:/etc/nginx/conf.d
+      - ./.docker/nginx/certs:/etc/nginx/certs
+      - ./dist:/var/www/prod
+      - ./build/src:/var/www/dev
+      - ./build:/var/www/test
+    networks:
+      default:
+        aliases:
+          - dev.protopaint.local
+          - prod.protopaint.local

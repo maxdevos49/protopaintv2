@@ -1,0 +1,31 @@
+{
+  "name": "protopaint-v2",
+  "version": "1.0.0",
+  "author": "Maxwell DeVos",
+  "license": "ISC",
+  "description": "CLUI powered paint app in the browser",
+  "scripts": {
+    "init": "npm i && npm run dist",
+    "test": "npm run build",
+    "dev": "nodemon --exec \"npm run build || exit 1\"",
+    "build": "tsc && npm run copy-project && npm run copy-test",
+    "clean": "rm -rf dist build node_modules",
+    "dist": "npm run test && rm -rf dist/* && rsync -av build/src/ dist",
+    "copy-project": "rsync -av --exclude=\"*.ts\" src build",
+    "copy-test": "rsync -av --exclude=\"*.ts\" test build"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.4.3"
+  },
+  "nodemonConfig": {
+    "delay": 2000,
+    "watch": [
+      "./src/*",
+      "./test/*"
+    ],
+    "ext": "ts,json,html,css,svg"
+  }
+}
